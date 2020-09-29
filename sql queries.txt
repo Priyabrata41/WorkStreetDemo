@@ -1,0 +1,16 @@
+CREATE DATABASE [EmployeeDb]  (EDITION = 'Basic', SERVICE_OBJECTIVE = 'Basic', MAXSIZE = 500 MB) WITH CATALOG_COLLATION = SQL_Latin1_General_CP1_CI_AS;
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbl_Employee](
+	[Name] [varchar](200) NULL,
+	[Location] [varchar](100) NULL,
+	[Designation] [varchar](50) NULL,
+	[Id] [varchar](100) NULL
+) ON [PRIMARY]
+GO
